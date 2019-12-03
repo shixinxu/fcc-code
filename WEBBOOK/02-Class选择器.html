@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Class选择器</title>
+    <style>
+        #main-table {
+            border: solid 2px black;
+        }
+        。table-row{
+            background-color:  yellow;
+            font-size: 20px;
+        }
+        .table-cell-1 {
+            width: 200px;
+            height: 80px;
+            text-align: center;
+        }
+        .table-cell-2 {
+            height: 100px;
+            text-align: right;
+            font-size: 25px;
+        }
+        .bg-orange {
+            background-color: darkorange;
+        }
+        .bg-red{
+            background-color: red;
+        }
+        .big-font {
+            font-size: large;
+        }
+
+    </style>
+</head>
+<body>
+ <table id="main-table">
+     <tr class="table-row">
+         <td class="table-cell-1 bg-orange big-font">第一行第一列</td>
+         <td class="table-cell-1">第一行第二列</td>
+         <td class="table-cell-1">第一行第三列</td>
+     </tr>
+     <tr class="table-row">
+         <td class="table-cell-2 bg-red">第二行第一列</td>
+         <td class="table-cell-2">第二行第二列</td>
+         <td class="table-cell-2">第二行第三列</td>
+     </tr>
+ </table>
+</body>
+</html>
