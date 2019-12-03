@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>动画基础</title>
+        <style>
+            #mydiv {
+                width: 200px;
+                height: 200px;
+                background-color: darkorange;
+                position: fixed;
+                left: 0px;
+                top: 0px;
+                animation: movediv 5s alternate;
+            }
+            @keyframes movediv {
+                from{}  /* 动画开始时的设置，也可以使用0% */
+                25% {
+                    background-color: pink;
+                    left: 500px;
+                    top: 0px;
+                }
+                50%{
+                    background-color: yellow;
+                    border: solid 10px black;
+                    left: 500px;
+                    top: 250px;
+                }
+                75%{
+                    border: solid 5px red;
+                    left: 0px;
+                    top: 400px;
+                }
+                /* to表示动画结束时的状态，也可以使用100% */
+                to {
+                    left: 0px;
+                    top: 0px;
+                }
+            }
+
+        </style>
+</head>
+<body>
+<div id="mydiv">perfect</div>
+</body>
+</html>
