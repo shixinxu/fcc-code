@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ID选择器</title>
+    <style>
+        td {
+            width: 200px;   /*为所有单元格设置统一宽度*/
+            font-size: 20px;  /*为所有单元格设置统一字体*/
+        }
+        #main-table {       /*ID选择器需要在ID前加#号*/
+            border-width: 2px; /*设置表格的边框宽度为2像素*/
+            border-style: solid;/*设置表格边框类型为实线*/
+            border-color: black;/*设置表格的边框颜色为黑色*/
+            background-color: orange;
+        }
+        #table-row-1{
+            height: 60px;/*设置第一行的高度为60像素*/
+            background-color: yellow;/*设置第一行的背景颜色为黄色*/
+            font-size: 10px;/*设置第一行的字体大小为100像素*/
+        }
+        #table-row-2{
+            height: 70px;/*设置第二行的高度为80像素*/
+            background-color: cadetblue;/*设置第二行的背景颜色*/
+            font-size: 20px;
+        }
+        #table-cell-1{
+            font-size: 30px;/*覆盖<td>标签的字体设置*/
+            width:  300px;/*设置第一列的宽度为300像素*/
+            text-align: center;/* 设置第一列的内容水平居中*/
+        }
+        #table-cell-2{
+            background-color: pink;
+            text-align: right;
+        }
+        #table-cell-3{
+            background-color: aqua;
+            text-align: left;
+        }
+        #table-cell-4{
+            background-color: green;
+            text-align: center;
+            height: 50px;
+        }
+        #table-cell-5{
+            background-color: purple;
+            text-align: left;
+            font-size: 30px;
+        }
+        #table-cell-6{
+            background-color: red;
+            text-align: right;
+        }
+
+    </style>
+</head>
+<body>
+ <table id="main-table">
+     <tr id="table-row-1 ">
+         <td id="table-cell-1">第一行第一列</td>
+         <td id="table-cell-2">第一行第二列</td>
+         <td id="table-cell-3">第一行第三列</td>
+     </tr>
+     <tr id="table-row-2">
+         <td id="table-cell-4">第二行第一列</td>
+         <td id="table-cell-5">第二行第二列</td>
+         <td id="table-cell-6">第二行第三列</td>
+     </tr>
+ </table>
+<p>先td内id后tr内id</p>
+</body>
+</html>
