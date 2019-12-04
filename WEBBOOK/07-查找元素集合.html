@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>查找元素集合</title>
+    <style>
+        .myclass {
+            width: 300px;
+            height: 150px;
+            background-color: pink;
+            font-size: 30px;
+            text-align: center;
+            vertical-align: center;
+            line-height: 150px;
+            margin: 5px;
+            float: left;
+        }
+    </style>
+    <script>
+        function fillText() {
+           var alldiv = document.getElementsByClassName("myclass");
+           for (var i=0; i<alldiv.length; i++) {
+               alldiv[i].innerHTML = "这是DIV的内容哦：" + (i+1);
+           }
+                   }
+    </script>
+</head>
+<!--请思考为什么必须在body的onload事件中调用fillText()函数-->
+<body onload="fillText()">
+   <div class="myclass"></div>
+   <div class="myclass"></div>
+   <div class="myclass"></div>
+   <div class="myclass"></div>
+</body>
+</html>
