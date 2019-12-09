@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript Prompt</title>
+</head>
+<body>
+   <h1>JavaScript Prompt</h1>
+   <button onclick="myFunction()">试一试</button>
+   <p id="demo"></p>
+   <script>
+    function myFution(){
+        var txt;
+        var person = prompt("请输入你的名字："，"刘壮实");
+        if (person == null || person  == "") {
+            txt = "用户取消输入";
+        } else {
+            txt = "你好，"+ person + "！今天过得好吗？";
+        }
+        document.getElementById("demo").innerHTML = txt;
+    }
+</script>
+</body>
+</html>
