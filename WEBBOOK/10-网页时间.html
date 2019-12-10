@@ -10,9 +10,9 @@
     var interval = self.setInterval("clock()",1000);
     function clock() {
         var date = new Date();
-        var time = date.toLocaleTimeString();
+        var time = date.toLocaleDateString()
+        //如上网页日期
         document.getElementById("clock").value = time;
-
     }
 </script>
   <button onclick="window.clearInterval(interval)">停止</button>
