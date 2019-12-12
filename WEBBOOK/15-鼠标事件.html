@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>鼠标事件</title>
+    <style>
+        #menu-div {
+            width: 140px;
+            height: 200px;
+            background-color: pink;
+            display: block;
+            position: fixed;
+        }
+        li {
+            margin-left: -10px;
+            line-height: 35px;
+        }
+    </style>
+    <script>
+        function popMenu(event) {
+            var mymenu = document.getElementById('menu-div');
+            mymenu.style.left = event.clientX + "px";
+            mymenu.style.top = event.clientY + "px";
+            mymenu.style.display='block';
+            return false; //该行代码确保系统自带的右键菜单不会被调出
+        }
+        function hideMenu() {
+            document.getElementById('menu-div').style.display='none';
+
+        }
+    </script>
+</head>
+<body>
+<a href="https://cn.bing.com/" oncontextmenu="return popMenu(event);" onmouseout="hideMenu();">必应大佬</a>
+<div id="menu-div">
+<ul>
+    <li>菜单1</li>
+    <li>菜单2</li>
+    <li>菜单3</li>
+    <li>菜单4</li>
+    <li>菜单5</li>
+
+</ul>
+</div>
+</body>
+</html>
