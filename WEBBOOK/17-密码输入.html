@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>密码输入</title>
+    <script>
+        function checkPassword() {
+            var value1 = document.getElementById("pass1").value;
+            var value2 = document.getElementById("pass2").value;
+            if (value1 == value2) {
+                alert("你输入的两次密码一致");
+            }
+            else {
+                alert("你输入的两次密码不一致，请重新输入");
+                document.getElementById("pass1").value = "";
+                document.getElementById("pass2").value = "";
+            }
+        }
+    </script>
+</head>
+<p>
+请输入密码： <input type="password" id="pass1"/></p>
+请确认密码：<input type="password" id="pass2" onblur="checkPassword()"/></p>
+</body>
+</html>
