@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>鼠标事件操作元素的显示与隐藏</title>
+    <script>
+        function show() {
+            var myElement = document.getElementById("mydiv");
+            var myButton = document.getElementById("mybtn");
+            myButton.value = "隐藏";
+            myElement.style.display = "block";
+        }
+        function hide() {
+            var myElement = document.getElementById("mydiv");
+            var myButton = document.getElementById("mybtn");
+            myButton.value = "显示";
+            myElement.style.display = "none";
+        }
+    </script>
+</head>
+<body>
+<input id="mybtn" value="隐藏" type="button" onmouseover="show()" onmousedown="hide()" />
+<div id="mydiv" style="width: 400px; height: 200px; background-color: pink;">我是DIV</div>
+</body>
+</html>
